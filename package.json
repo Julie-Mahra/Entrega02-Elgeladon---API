@@ -1,7 +1,7 @@
 {
-  "name": "entrega02-elgeladon---api",
+  "name": "el-geladon-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto com estrutura backend e js vanila.",
   "main": "index.js",
   "scripts": {
     "start": "node index",
@@ -12,9 +12,19 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.0"
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julie-Mahra/El-Geladon-Vanilla.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Julie-Mahra/El-Geladon-Vanilla/issues"
+  },
+  "homepage": "https://github.com/Julie-Mahra/El-Geladon-Vanilla#readme"
 }

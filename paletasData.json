@@ -1,0 +1,38 @@
+[
+  {
+    "sabor": "Açaí com Leite Condensado",
+    "descricao": "Paleta feita com açaí Natural e super nutritivo, com recheio de Leite Condensado.",
+    "foto": "./assets/images/acai-com-leite-condensado.png",
+    "preco": 8.0
+  },
+  {
+    "sabor": "Banana com Nutella",
+    "descricao": "Paleta de Banana com recheio cremoso de Nutella.",
+    "foto": "./assets/images/banana-com-nutella.png",
+    "preco": 10.0
+  },
+  {
+    "sabor": "Chocolate Belga",
+    "descricao": "Paleta feita com creme de Chocolate Belga à 90%",
+    "foto": "./assets/images/chocolate-belga.png",
+    "preco": 10.0
+  },
+  {
+    "sabor": "Côco",
+    "descricao": "Paleta feita com Côco in natura, sem adição de açúcar",
+    "foto": "./assets/images/coco.png",
+    "preco": 8.0
+  },
+  {
+    "sabor": "Morango com Nutella",
+    "descricao": "Paleta feita com Morangos frescos, com recheio cremoso de Nutella",
+    "foto": "./assets/images/morango-com-nutella.png",
+    "preco": 10.0
+  },
+  {
+    "sabor": "Ninho com Ovomaltine",
+    "descricao": " Paleta feita com Leite Ninho em creme e recheio crocante de Ovomaltine",
+    "foto": "./assets/images/ninho-com-ovomaltine.png",
+    "preco": 12.0
+  }
+]

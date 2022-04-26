@@ -1,17 +1,28 @@
 const mongoose = require('mongoose');
 
-function connectToDatabase() {
-  mongoose
-    .connect('mongodb://localhost:27017/paletas-db', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
-    .then(() => {
-      console.log('MONGO DB CONECTADO');
-    })
-    .catch((err) => {
-      return console.log(`Erro na conexao com o banco: ${err}`);
-    });
-}
+const validId = (req, res, next) => {
+  const idParam = req.params.id;
 
-module.exports = connectToDatabase;
+  if (!mongoose.Types.ObjectId.isValid(idParam)) {
+    return res.status(404).send({ message: 'Dados Inválidos!' });
+  }
+  next();
+};
+
+const validObjectBody = (req, res, next) => {
+  const paleta = req.body;
+  if (
+    !paleta ||
+    !paleta.foto ||
+    !paleta.preco
+  ) {
+    return res.status(400).send({
+      message: 'Faltam dados para a incluir nova paleta ao cardápio!',
+    });
+  }
+  next();
+}
+module.exports = {
+  validId,
+  validObjectBody,
+};
