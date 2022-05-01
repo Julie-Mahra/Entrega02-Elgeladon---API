@@ -1,8 +1,8 @@
 /*Rotas de acesso à todas as paletas, enviando para o Controller*/
 const { Router } = require('express');
+const route = require('express').Router();
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('../../swagger.json');
-const route = require('express').Router();
 const controllerPaletas = require('../controllers/paleta.Controller');
 const controllerCarinho = require('../controllers/carrinho.controller')
 
@@ -13,10 +13,10 @@ const {
   validObjectBodyCarrinho
 } = require('../middlewares/paleta.middleware');
 
-/*Rotas para swagger
-Router.use('/api-docs', swaggerUi.serve);
-Router.use('/api-docs', swaggerUi.setup(swaggerDocument));
-*/
+/*Rotas para swagger*/
+route.use('/api-docs', swaggerUi.serve);
+route.get('/api-docs', swaggerUi.setup(swaggerDocument));
+
 /*Rota para busca de todas as paletas*/
 route.get('/all-paletas', controllerPaletas.findAllPaletasController);
 
