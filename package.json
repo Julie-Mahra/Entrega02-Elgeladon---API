@@ -1,7 +1,7 @@
 {
   "name": "el-geladon-api",
   "version": "1.0.0",
-  "description": "Projeto com estrutura backend e js vanila.",
+  "description": "Projeto El Geladon.",
   "main": "index.js",
   "scripts": {
     "start": "node index",
@@ -23,10 +23,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Julie-Mahra/El-Geladon-Vanilla.git"
+    "url": "git+https://github.com/Julie-Mahra/Api-ElGeladon-Entrega-03.git"
   },
   "bugs": {
-    "url": "https://github.com/Julie-Mahra/El-Geladon-Vanilla/issues"
+    "url": "https://github.com/Julie-Mahra/Api-ElGeladon-Entrega-03/issues"
   },
-  "homepage": "https://github.com/Julie-Mahra/El-Geladon-Vanilla#readme"
+  "homepage": "https://github.com/Julie-Mahra/Api-ElGeladon-Entrega-03#readme"
 }
