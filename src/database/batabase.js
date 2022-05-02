@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 
 const connectToDatabase = () => {
   mongoose
-    .connect(process.env.URI_DATABASE, { // Variável de ambiente.
+    .connect('mongodb://localhost:27017/paletas-db', { // Variável de ambiente.
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
-    .then(() => console.log('MongoDB Atlas Conectado!'))
+    .then(() => console.log('MongoDB Conectado!'))
     .catch((error) =>
       console.log(`Erro ao conectar com o MongoDB, erro: ${error}`),
     );

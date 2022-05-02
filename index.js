@@ -4,7 +4,7 @@ const cors = require('cors');
 const routes = require('./src/routes/paleta.Route');
 const connectToDatabase = require('./src/database/batabase');
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 4000;
 const app = express();
 
 connectToDatabase();
